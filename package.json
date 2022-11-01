@@ -1,0 +1,23 @@
+{
+  "name": "typescript",
+  "description": "whatever",
+  "version": "0.0.0",
+  "scripts": {
+    "build": "shx rm -rf lib && NODE_ENV=production tsc && shx chmod +x lib/cli.js",
+    "dev": "tsc -w"
+  },
+  "dependencies": {
+    "create-whatever": "^5.0.0"
+  },
+  "devDependencies": {
+    "shx": "^0.3.2",
+    "typescript": "^3.6.3"
+  },
+  "author": "Suphachai Hestmark <top_hestmark@yahoo.no>",
+  "license": "MIT",
+  "bin": "lib/cli.js",
+  "files": [
+    "lib",
+    "templates"
+  ]
+}
